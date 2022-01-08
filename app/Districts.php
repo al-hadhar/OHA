@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class districts extends Model
 {
     //
-    public $table='district';
+    public $table='tbl_district';
     protected $primaryKey='dist_id';
     const UPDATED_AT = 'UPDATED_DATE';
     const  CREATED_AT = 'CREATED_DATE';

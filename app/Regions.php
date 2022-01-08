@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class regions extends Model
 {
     //
-    public $table ='regions';
+    public $table ='tbl_regions';
     protected $primaryKey ='reg_id';
     const CREATED_AT = 'CREATED_DATE';
     const UPDATED_AT = 'UPDATED_DATE';
