@@ -48,7 +48,7 @@
             <div class="col-md-8">
                 <div class="box box-default">
                     <div class="box-header no-border text-center">
-                        <h3 class="box-title">Quick Upload</h3>
+                        <h3 class="box-title">Quick Surveillance Data Upload</h3>
 
                         <div class="box-tools pull-right">
                             <button type="button" class="btn btn-box-tool" data-widget="collapse"><i
@@ -59,7 +59,7 @@
                         </div>
                     </div>
                     <div class="box-body">
-                        <form action="#" class="text-center" style="width: 30vw;margin: 0 auto;" onsubmit="return gotoUpload()">
+                        <form action="#" class="text-left" style="width: 30vw;margin: 0 auto;" onsubmit="return gotoUpload()" enctype="multipart/form-data">
                             <div class="form-group">
                                 {{--<label for="">Choose {{ucfirst(config('settings.document_label_singular'))}}</label>--}}
                                 <label for="">Choose Data Source</label>
@@ -71,7 +71,7 @@
                                     @endforeach
                                 </select>--}}
 
-                                <select name="data_source_id" id="data_source_id" class="form-control select2" required>
+                                <select name="data_source_id" id="data_source_id" class="form-control" required>
                                             <option value="">--Choose Data Source--</option>
                                             <option value="1">Human Surveillance - BHIS2 (MoHCDEC)</option>
                                             <option value="2">Animal Surveillance (MoLF)</option>
@@ -81,7 +81,7 @@
                                 {{--<label for="">Choose {{ucfirst(config('settings.document_label_singular'))}}</label>--}}
                                 <label for="">Choose File (Excel Format)</label>
 
-                                <input name="file" type="text" id="file" class="form-control" required style="width: 100%;">
+                                <input name="file" type="file" id="file" class="form-control" required>
                             </div>
 
                             <div class="form-group">

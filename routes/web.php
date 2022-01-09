@@ -49,3 +49,6 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth','check_block']], func
     Route::get('/_zip/{id}/{dir?}','HomeController@downloadZip')->name('files.downloadZip');
     Route::post('/_pdf','HomeController@downloadPdf')->name('files.downloadPdf');
 });
+
+
+Route::resource('uploadHeaders', 'UploadHeaderController');
