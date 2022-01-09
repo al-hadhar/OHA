@@ -61,15 +61,29 @@
                     <div class="box-body">
                         <form action="#" class="text-center" style="width: 30vw;margin: 0 auto;" onsubmit="return gotoUpload()">
                             <div class="form-group">
-                                <label for="">Choose {{ucfirst(config('settings.document_label_singular'))}}</label>
-                                <select name="document_id" id="document_id" class="form-control select2" required>
+                                {{--<label for="">Choose {{ucfirst(config('settings.document_label_singular'))}}</label>--}}
+                                <label for="">Choose Data Source</label>
+                                {{--<select name="document_id" id="document_id" class="form-control select2" required>
                                     @foreach ($documents as $document)
                                         @can('view',$document)
                                             <option value="{{$document->id}}">{{$document->name}}</option>
                                         @endcan
                                     @endforeach
+                                </select>--}}
+
+                                <select name="data_source_id" id="data_source_id" class="form-control select2" required>
+                                            <option value="">--Choose Data Source--</option>
+                                            <option value="1">Human Survailance - BHIS2 (MoHCDEC)</option>
+                                            <option value="2">Animal Survailance (MoLF)</option>
                                 </select>
                             </div>
+                            <div class="form-group">
+                                {{--<label for="">Choose {{ucfirst(config('settings.document_label_singular'))}}</label>--}}
+                                <label for="">Choose File (Excel Format)</label>
+
+                                <input name="file" type="text" id="file" class="form-control" required style="width: 100%;">
+                            </div>
+
                             <div class="form-group">
                                 <button class="btn btn-primary">Upload</button>
                             </div>

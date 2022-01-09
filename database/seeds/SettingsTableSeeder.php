@@ -11,7 +11,7 @@ class SettingsTableSeeder extends Seeder
      */
     public function run()
     {
-        \App\Setting::create(['name'=>'system_title','value'=>'Digi Docu']);
+        \App\Setting::create(['name'=>'system_title','value'=>'Integrated OHA']);
         \App\Setting::create(['name'=>'system_logo','value'=>'logo.png']);
 
         \App\Setting::create(['name'=>'tags_label_singular','value'=>'tag']);

@@ -87,7 +87,8 @@
 
         <div class="links">
             <blockquote>
-                {{$quotes}}
+                {{--{{$quotes}}--}}
+                Welcome to Intergrated One Health Approach
             </blockquote>
         </div>
     </div>
