@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class specimen extends Model
 {
     //
-    public $table ='tbl_specimen';
+    public $table ='tbl_specimens';
     protected  $primaryKey='spec_id';
     const UPDATED_AT = 'UPDATED_DATE';
     const CREATED_AT = 'CREATED_DATE';
