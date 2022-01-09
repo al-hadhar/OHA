@@ -59,7 +59,26 @@
                         </div>
                     </div>
                     <div class="box-body">
-                        <form action="#" class="text-left" style="width: 30vw;margin: 0 auto;" onsubmit="return gotoUpload()" enctype="multipart/form-data">
+                        @if ($message = Session::get('success'))
+                            <div class="alert alert-success alert-block">
+                                <button type="button" class="close" data-dismiss="alert">×</button>
+                                <strong>{{ $message }}</strong>
+                            </div>
+                            {{--<img src="uploads/{{ Session::get('file') }}">--}}
+                        @endif
+
+                        @if (count($errors) > 0)
+                            <div class="alert alert-danger">
+                                <strong>Whoops!</strong> There were some problems with your input.
+                                <ul>
+                                    @foreach ($errors->all() as $error)
+                                        <li>{{ $error }}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        @endif
+
+                        <form method="post" action="{{ route('file.upload.create_header') }}" class="text-left" style="width: 30vw;margin: 0 auto;" enctype="multipart/form-data">
                             <div class="form-group">
                                 {{--<label for="">Choose {{ucfirst(config('settings.document_label_singular'))}}</label>--}}
                                 <label for="">Choose Data Source</label>
@@ -71,11 +90,12 @@
                                     @endforeach
                                 </select>--}}
 
-                                <select name="data_source_id" id="data_source_id" class="form-control" required>
+                                <select name="type" id="type" class="form-control" required>
                                             <option value="">--Choose Data Source--</option>
                                             <option value="1">Human Surveillance - BHIS2 (MoHCDEC)</option>
                                             <option value="2">Animal Surveillance (MoLF)</option>
                                 </select>
+                                <input type="hidden" name="_token" id="token" value="{{ csrf_token() }}">
                             </div>
                             <div class="form-group">
                                 {{--<label for="">Choose {{ucfirst(config('settings.document_label_singular'))}}</label>--}}
