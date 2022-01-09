@@ -73,8 +73,8 @@
 
                                 <select name="data_source_id" id="data_source_id" class="form-control select2" required>
                                             <option value="">--Choose Data Source--</option>
-                                            <option value="1">Human Survailance - BHIS2 (MoHCDEC)</option>
-                                            <option value="2">Animal Survailance (MoLF)</option>
+                                            <option value="1">Human Surveillance - BHIS2 (MoHCDEC)</option>
+                                            <option value="2">Animal Surveillance (MoLF)</option>
                                 </select>
                             </div>
                             <div class="form-group">
