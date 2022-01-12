@@ -46,3 +46,11 @@
     <a href="{!! route('uploadHeaders.index') !!}"><i class="fa fa-edit"></i><span>Upload Headers</span></a>
 </li>
 
+<li class="{{ Request::is('animalSurveillances*') ? 'active' : '' }}">
+    <a href="{!! route('animalSurveillances.index') !!}"><i class="fa fa-edit"></i><span>Animal Surveillances</span></a>
+</li>
+
+<li class="{{ Request::is('animalSurveillanceFinals*') ? 'active' : '' }}">
+    <a href="{!! route('animalSurveillanceFinals.index') !!}"><i class="fa fa-edit"></i><span>Animal Surveillance Finals</span></a>
+</li>
+

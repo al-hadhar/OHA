@@ -6,10 +6,14 @@ use App\DataTables\UploadHeaderDataTable;
 use App\Http\Requests;
 use App\Http\Requests\CreateUploadHeaderRequest;
 use App\Http\Requests\UpdateUploadHeaderRequest;
+use App\Imports\AnimalSurveillanceImport;
+use App\Jobs\ProcessUploadedHeader;
 use App\Repositories\UploadHeaderRepository;
 use Flash;
 use App\Http\Controllers\AppBaseController;
 use Illuminate\Http\Request;
+//use Maatwebsite\Excel\Excel;
+use Maatwebsite\Excel\Facades\Excel;
 use Response;
 
 class UploadHeaderController extends AppBaseController
@@ -156,10 +160,6 @@ class UploadHeaderController extends AppBaseController
         ]);
 
         $fileName = time().'.'.$request->file->extension();
-
-        $storedPath = $request->file->move(public_path('uploads/documents'), $fileName);
-       // dd(public_path());
-
         $input = [
             'type' => $request->type,
             'file_name' => $fileName,
@@ -171,6 +171,18 @@ class UploadHeaderController extends AppBaseController
 
         //dd($input);
         $uploadHeader = $this->uploadHeaderRepository->create($input);
+        //dd($uploadHeader['id']);
+
+        $headerId = $uploadHeader['id'];
+        Excel::import(new AnimalSurveillanceImport($headerId),request()->file('file'));
+
+        $storedPath = $request->file->move(public_path('uploads/documents'), $fileName);
+       // dd(public_path());
+        ProcessUploadedHeader::dispatch($headerId);
+
+
+
+        //Excel::import(new AnimalSurveillanceImport,request()->file('file'));
 
         return back()
             ->with('success','You have successfully upload file.')

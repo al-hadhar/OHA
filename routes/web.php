@@ -53,3 +53,8 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth','check_block']], func
 
 Route::resource('uploadHeaders', 'UploadHeaderController');
 Route::post('/upload/create-upload-header', 'UploadHeaderController@createUploadHeader')->name('file.upload.create_header');
+
+
+Route::resource('animalSurveillances', 'AnimalSurveillanceController');
+
+Route::resource('animalSurveillanceFinals', 'AnimalSurveillanceFinalController');
