@@ -180,8 +180,6 @@ class UploadHeaderController extends AppBaseController
        // dd(public_path());
         ProcessUploadedHeader::dispatch($headerId);
 
-
-
         //Excel::import(new AnimalSurveillanceImport,request()->file('file'));
 
         return back()
