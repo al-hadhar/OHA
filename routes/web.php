@@ -49,3 +49,12 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth','check_block']], func
     Route::get('/_zip/{id}/{dir?}','HomeController@downloadZip')->name('files.downloadZip');
     Route::post('/_pdf','HomeController@downloadPdf')->name('files.downloadPdf');
 });
+
+
+Route::resource('uploadHeaders', 'UploadHeaderController');
+Route::post('/upload/create-upload-header', 'UploadHeaderController@createUploadHeader')->name('file.upload.create_header');
+
+
+Route::resource('animalSurveillances', 'AnimalSurveillanceController');
+
+Route::resource('animalSurveillanceFinals', 'AnimalSurveillanceFinalController');

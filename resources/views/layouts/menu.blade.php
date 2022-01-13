@@ -6,7 +6,7 @@
         <a href="{!! route('users.index') !!}"><i class="fa fa-users"></i><span>Users</span></a>
     </li>
 @endcan
-@can('read tags')
+{{--@can('read tags')
     <li class="{{ Request::is('admin/tags*') ? 'active' : '' }}">
         <a href="{!! route('tags.index') !!}"><i
                 class="fa fa-tags"></i><span>{{ucfirst(config('settings.tags_label_plural'))}}</span></a>
@@ -17,12 +17,12 @@
         <a href="{!! route('documents.index') !!}"><i
                 class="fa fa-file"></i><span>{{ucfirst(config('settings.document_label_plural'))}}</span></a>
     </li>
-@endcan
+@endcan--}}
 @if(auth()->user()->is_super_admin)
     <li class="treeview {{ Request::is('admin/advanced*') ? 'active' : '' }}">
         <a href="#">
             <i class="fa fa-info-circle"></i>
-            <span>Advanced Settings</span>
+            <span>Settings</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
@@ -41,4 +41,16 @@
         </ul>
     </li>
 @endif
+
+<li class="{{ Request::is('uploadHeaders*') ? 'active' : '' }}">
+    <a href="{!! route('uploadHeaders.index') !!}"><i class="fa fa-edit"></i><span>Upload Headers</span></a>
+</li>
+
+<li class="{{ Request::is('animalSurveillances*') ? 'active' : '' }}">
+    <a href="{!! route('animalSurveillances.index') !!}"><i class="fa fa-edit"></i><span>Animal Surveillances</span></a>
+</li>
+
+<li class="{{ Request::is('animalSurveillanceFinals*') ? 'active' : '' }}">
+    <a href="{!! route('animalSurveillanceFinals.index') !!}"><i class="fa fa-edit"></i><span>Animal Surveillance Finals</span></a>
+</li>
 
