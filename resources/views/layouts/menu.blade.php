@@ -54,3 +54,11 @@
     <a href="{!! route('animalSurveillanceFinals.index') !!}"><i class="fa fa-edit"></i><span>Animal Surveillance Finals</span></a>
 </li>
 
+<li class="{{ Request::is('humanSurveillances*') ? 'active' : '' }}">
+    <a href="{!! route('humanSurveillances.index') !!}"><i class="fa fa-edit"></i><span>Human Surveillances</span></a>
+</li>
+
+<li class="{{ Request::is('humanSurveillanceFinals*') ? 'active' : '' }}">
+    <a href="{!! route('humanSurveillanceFinals.index') !!}"><i class="fa fa-edit"></i><span>Human Surveillance Finals</span></a>
+</li>
+

@@ -58,3 +58,15 @@ Route::post('/upload/create-upload-header', 'UploadHeaderController@createUpload
 Route::resource('animalSurveillances', 'AnimalSurveillanceController');
 
 Route::resource('animalSurveillanceFinals', 'AnimalSurveillanceFinalController');
+
+Route::resource('humanSurveillances', 'HumanSurveillanceController');
+
+Route::resource('humanSurveillanceFinals', 'HumanSurveillanceFinalController');
+
+Route::resource('humanSurveillanceFinals', 'HumanSurveillanceFinalController');
+
+Route::resource('humanSurveillances', 'HumanSurveillanceController');
+
+Route::resource('humanSurveillances', 'HumanSurveillanceController');
+
+Route::resource('humanSurveillanceFinals', 'HumanSurveillanceFinalController');

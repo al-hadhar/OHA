@@ -54,7 +54,8 @@ class AnimalSurveillance extends Model
         'vaccinated',
         'lat',
         'long',
-        'status'
+        'status',
+        'valid_status'
     ];
 
     /**
@@ -80,7 +81,8 @@ class AnimalSurveillance extends Model
         'vaccinated' => 'string',
         'lat' => 'integer',
         'long' => 'integer',
-        'status' => 'integer'
+        'status' => 'integer',
+        'valid_status' => 'integer'
     ];
 
     /**
@@ -104,7 +106,8 @@ class AnimalSurveillance extends Model
         'vaccinated' => 'nullable|string|max:10',
         'lat' => 'nullable|integer',
         'long' => 'nullable|integer',
-        'status' => 'nullable|integer'
+        'status' => 'nullable|integer',
+        'valid_status' => 'nullable|integer'
     ];
 
 

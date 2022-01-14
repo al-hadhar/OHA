@@ -7,7 +7,9 @@ use App\Http\Requests;
 use App\Http\Requests\CreateUploadHeaderRequest;
 use App\Http\Requests\UpdateUploadHeaderRequest;
 use App\Imports\AnimalSurveillanceImport;
+use App\Imports\HumanSurveillanceImport;
 use App\Jobs\ProcessUploadedHeader;
+use App\Repositories\AnimalSurveillanceRepository;
 use App\Repositories\UploadHeaderRepository;
 use Flash;
 use App\Http\Controllers\AppBaseController;
@@ -20,10 +22,14 @@ class UploadHeaderController extends AppBaseController
 {
     /** @var  UploadHeaderRepository */
     private $uploadHeaderRepository;
+    private $animalSurveillanceRepo;
 
-    public function __construct(UploadHeaderRepository $uploadHeaderRepo)
+
+    public function __construct(UploadHeaderRepository $uploadHeaderRepo, AnimalSurveillanceRepository $animalSurveillanceRepo)
     {
+
         $this->uploadHeaderRepository = $uploadHeaderRepo;
+        $this->animalSurveillanceRepo = $animalSurveillanceRepo;
     }
 
     /**
@@ -174,11 +180,16 @@ class UploadHeaderController extends AppBaseController
         //dd($uploadHeader['id']);
 
         $headerId = $uploadHeader['id'];
-        Excel::import(new AnimalSurveillanceImport($headerId),request()->file('file'));
+        $uploadType = $uploadHeader['type'];
+        if($uploadType==1){
+            Excel::import(new HumanSurveillanceImport($headerId),request()->file('file'));
+        }else if($uploadType==2){
+            Excel::import(new AnimalSurveillanceImport($headerId),request()->file('file'));
+        }
 
         $storedPath = $request->file->move(public_path('uploads/documents'), $fileName);
        // dd(public_path());
-        ProcessUploadedHeader::dispatch($headerId);
+        ProcessUploadedHeader::dispatch($headerId,$uploadType);
 
         //Excel::import(new AnimalSurveillanceImport,request()->file('file'));
 
