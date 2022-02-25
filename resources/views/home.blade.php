@@ -92,7 +92,7 @@
 
                                 <select name="type" id="type" class="form-control" required>
                                             <option value="">--Choose Data Source--</option>
-                                            <option value="1">Human Surveillance - BHIS2 (MoHCDEC)</option>
+                                            <option value="1">Human Surveillance - DHIS2 (MoHCDEC)</option>
                                             <option value="2">Animal Surveillance (MoLF)</option>
                                 </select>
                                 <input type="hidden" name="_token" id="token" value="{{ csrf_token() }}">
