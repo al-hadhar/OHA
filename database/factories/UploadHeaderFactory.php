@@ -13,6 +13,8 @@ $factory->define(UploadHeader::class, function (Faker $faker) {
         'file_path' => $faker->word,
         'total_success' => $faker->randomDigitNotNull,
         'total_failed' => $faker->randomDigitNotNull,
-        'status' => $faker->randomDigitNotNull
+        'status' => $faker->randomDigitNotNull,
+        'created_at' => $faker->date('Y-m-d H:i:s'),
+        'updated_at' => $faker->date('Y-m-d H:i:s')
     ];
 });

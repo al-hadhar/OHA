@@ -7,16 +7,16 @@ use Eloquent as Model;
 /**
  * Class HumanSurveillanceFinal
  * @package App
- * @version January 15, 2022, 2:36 am IST
+ * @version February 20, 2022, 10:32 pm IST
  *
  * @property integer $id
  * @property integer $upload_header_id
  * @property string $organisation_unit_name
  * @property string $organisation_unit_code
  * @property string $disease
- * @property integer $one_month_to_below_one_year
- * @property integer $one_to_below_five_years
+ * @property integer $one_month_to_below_five_year
  * @property integer $five_to_below_sixty_years
+ * @property string $observation_date
  */
 class HumanSurveillanceFinal extends Model
 {
@@ -35,9 +35,9 @@ class HumanSurveillanceFinal extends Model
         'organisation_unit_name',
         'organisation_unit_code',
         'disease',
-        'one_month_to_below_one_year',
-        'one_to_below_five_years',
-        'five_to_below_sixty_years'
+        'one_month_to_below_five_year',
+        'five_to_below_sixty_years',
+        'observation_date'
     ];
 
     /**
@@ -51,9 +51,9 @@ class HumanSurveillanceFinal extends Model
         'organisation_unit_name' => 'string',
         'organisation_unit_code' => 'string',
         'disease' => 'string',
-        'one_month_to_below_one_year' => 'integer',
-        'one_to_below_five_years' => 'integer',
-        'five_to_below_sixty_years' => 'integer'
+        'one_month_to_below_five_year' => 'integer',
+        'five_to_below_sixty_years' => 'integer',
+        'observation_date' => 'string'
     ];
 
     /**
@@ -66,9 +66,9 @@ class HumanSurveillanceFinal extends Model
         'organisation_unit_name' => 'nullable|string|max:200',
         'organisation_unit_code' => 'nullable|string|max:100',
         'disease' => 'nullable|string|max:100',
-        'one_month_to_below_one_year' => 'nullable|integer',
-        'one_to_below_five_years' => 'nullable|integer',
+        'one_month_to_below_five_year' => 'nullable|integer',
         'five_to_below_sixty_years' => 'nullable|integer',
+        'observation_date' => 'nullable|string|max:50',
         'created_at' => 'nullable',
         'updated_at' => 'nullable'
     ];

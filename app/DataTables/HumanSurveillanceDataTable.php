@@ -70,9 +70,10 @@ class HumanSurveillanceDataTable extends DataTable
             'organisation_unit_name',
             'organisation_unit_code',
             'disease',
-            'one_month_to_below_one_year',
+            'zero_year',
             'one_to_below_five_years',
             'five_to_below_sixty_years',
+            'observation_date',
             'status',
             'valid_status',
             'reject_reason'

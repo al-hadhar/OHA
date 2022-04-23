@@ -38,11 +38,11 @@
 </div>
 
 
-<!-- One Month To Below One Year Field -->
-<div class="form-group col-sm-6 {{ $errors->has('one_month_to_below_one_year') ? 'has-error' :'' }}">
-    {!! Form::label('one_month_to_below_one_year', 'One Month To Below One Year:') !!}
-    {!! Form::text('one_month_to_below_one_year', null, ['class' => 'form-control']) !!}
-    {!! $errors->first('one_month_to_below_one_year','<span class="help-block">:message</span>') !!}
+<!-- Zero Year Field -->
+<div class="form-group col-sm-6 {{ $errors->has('zero_year') ? 'has-error' :'' }}">
+    {!! Form::label('zero_year', 'Zero Year:') !!}
+    {!! Form::text('zero_year', null, ['class' => 'form-control']) !!}
+    {!! $errors->first('zero_year','<span class="help-block">:message</span>') !!}
 </div>
 
 
@@ -59,6 +59,14 @@
     {!! Form::label('five_to_below_sixty_years', 'Five To Below Sixty Years:') !!}
     {!! Form::text('five_to_below_sixty_years', null, ['class' => 'form-control']) !!}
     {!! $errors->first('five_to_below_sixty_years','<span class="help-block">:message</span>') !!}
+</div>
+
+
+<!-- Observation Date Field -->
+<div class="form-group col-sm-6 {{ $errors->has('observation_date') ? 'has-error' :'' }}">
+    {!! Form::label('observation_date', 'Observation Date:') !!}
+    {!! Form::text('observation_date', null, ['class' => 'form-control']) !!}
+    {!! $errors->first('observation_date','<span class="help-block">:message</span>') !!}
 </div>
 
 

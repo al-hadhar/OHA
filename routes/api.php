@@ -16,3 +16,21 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+
+Route::resource('animal_surveillances', 'API\AnimalSurveillanceAPIController');
+
+Route::resource('human_surveillances', 'API\HumanSurveillanceAPIController');
+
+
+Route::resource('upload_headers', 'API\UploadHeaderAPIController');
+
+
+/*Route::resource('regional_zones', 'API\RegionalZonesAPIController');*/
+
+Route::resource('regions', 'API\RegionsAPIController');
+
+Route::resource('councils', 'API\CouncilsAPIController');
+
+
+Route::resource('zones', 'API\ZonesAPIController');

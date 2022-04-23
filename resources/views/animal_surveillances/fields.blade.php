@@ -1,3 +1,11 @@
+<!-- Upload Header Id Field -->
+<div class="form-group col-sm-6 {{ $errors->has('upload_header_id') ? 'has-error' :'' }}">
+    {!! Form::label('upload_header_id', 'Upload Header Id:') !!}
+    {!! Form::number('upload_header_id', null, ['class' => 'form-control']) !!}
+    {!! $errors->first('upload_header_id','<span class="help-block">:message</span>') !!}
+</div>
+
+
 <!-- Region Field -->
 <div class="form-group col-sm-6 {{ $errors->has('region') ? 'has-error' :'' }}">
     {!! Form::label('region', 'Region:') !!}
@@ -123,6 +131,22 @@
     {!! Form::label('status', 'Status:') !!}
     {!! Form::number('status', null, ['class' => 'form-control']) !!}
     {!! $errors->first('status','<span class="help-block">:message</span>') !!}
+</div>
+
+
+<!-- Valid Status Field -->
+<div class="form-group col-sm-6 {{ $errors->has('valid_status') ? 'has-error' :'' }}">
+    {!! Form::label('valid_status', 'Valid Status:') !!}
+    {!! Form::number('valid_status', null, ['class' => 'form-control']) !!}
+    {!! $errors->first('valid_status','<span class="help-block">:message</span>') !!}
+</div>
+
+
+<!-- Reject Reason Field -->
+<div class="form-group col-sm-12 col-lg-12 {{ $errors->has('reject_reason') ? 'has-error' :'' }}">
+    {!! Form::label('reject_reason', 'Reject Reason:') !!}
+    {!! Form::textarea('reject_reason', null, ['class' => 'form-control']) !!}
+    {!! $errors->first('reject_reason','<span class="help-block">:message</span>') !!}
 </div>
 
 

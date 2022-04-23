@@ -26,9 +26,10 @@ class HumanSurveillanceImport implements ToModel,WithHeadingRow
             'organisation_unit_name' => $row['organisation_unit_name'],
             'organisation_unit_code' => $row['organisation_unit_code'],
             'disease' => $row['disease'],
-            'one_month_to_below_one_year' => $row['one_month_to_below_one_year'],
-            'one_to_below_five_years' => $row['one_to_below_five_years'],
+            'one_month_to_below_five_year' => $row['one_month_to_below_five_year'],
             'five_to_below_sixty_years' => $row['five_to_below_sixty_years'],
+            'observation_date' => $row['observation_date'],
+            'status'=>0
         ]);
     }
 }
