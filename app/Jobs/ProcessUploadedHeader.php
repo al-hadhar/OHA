@@ -122,8 +122,6 @@ class ProcessUploadedHeader implements ShouldQueue
             }
 
             $updateUploadHeader = $this->updateStagingHumanSurveillance($update_data,$value->id);
-
-
         }
 
         if($total_rejected>0){
