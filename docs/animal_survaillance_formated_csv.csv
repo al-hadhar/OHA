@@ -1,0 +1,81 @@
+SNO,REGION,DISTRICT,VILLAGE,DATE_OF_OBSERVATION,DISEASE,SPECIE_AFFECTED,CASES,DEATH,NO_AT_RISK,TREATED,DESTROYED,SLAUGHTERED,VACCINATED,LAT,LONG,
+1,Tanga,Pangani,Mikunguni,15-Mar-2016,Rabies,Dog,5,5,115,0,0,0,72,-5.53333,38.93333,
+2,Morogoro,Morogoro,Kibuko,1-Apr-2016,Rabies,Dog,5,5,1173,0,0,0,0,-7.10000,37.56667,
+3,Mbeya,Mbozi,Mbewe,4-Apr-2016,Rabies,Dog,1,1,20,0,0,0,0,-9.20000,33.18333,
+4,Arusha,Arusha,Enaboishu,16-Apr-2016,Rabies,Dog,3,0,201,0,3,0,0,-3.35000,36.70000,
+5,Rukwa,Mpanda,Mpanda,22-Apr-2016,Rabies,Dog,1,1,67,0,0,0,0,-6.36667,31.03333,
+6,Tanga,Handeni,Kwamaligwa,29-Apr-2016,Rabies,Dog,15,11,306,0,4,0,0,-5.41667,37.46667,
+7,Tanga,Handeni,Songe,6-May-2016,Rabies,Dog,4,2,69,,2,0,0,-5.58333,37.35000,
+8,Tanga,Handeni,Kilindi,15-May-2016,Rabies,Dog,20,16,292,,4,0,41,-5.65000,37.58333,
+9,Tanga,Handeni,Kilindi,16-May-2016,Rabies,Dog,5,2,103,,0,0,13,-5.65000,37.58333,
+10,Tanga,Handeni,Kilindi,17-May-2016,Rabies,Dog,13,6,223,,7,0,37,-5.65000,37.58333,
+11,Kilimanjaro,Same,Same,1-Jun-2016,Rabies,Dog,2,2,50,,0,0,0,-4.09889,37.76306,
+12,Tanga,Lushoto,Lushoto,21-Jun-2016,Rabies,Dog,1,1,337,,0,0,0,-4.78333,38.28333,
+13,Tanga,Handeni,Jungu,25-Jun-2016,Rabies,Dog,17,10,153,,7,0,0,-5.38333,37.68333,
+14,Tanga,Handeni,Songe,9-Jul-2016,Rabies,Dog,2,1,95,,1,0,17,-5.58333,37.35000,
+15,Tanga,Handeni,Songe,31-Aug-2016,Rabies,Dog,11,11,207,,0,0,29,-5.58333,37.35000,
+16,Tanga,Handeni,Songe,1-Oct-2016,Rabies,Dog,7,5,251,,2,0,13,-5.58333,37.35000,
+17,Rukwa,Mpanda,Katavi National Park,29-Dec-2016,Rabies,Dog,2,2,50,,0,0,0,-6.85778,31.36889,
+18,Tanga,Lushoto,Nywelo,7-Jan-2017,Rabies,Dog,2,2,57,0,0,0,52,-4.65000,38.55000,
+19,Rukwa,Mpanda,Kasanse,28-Feb-2017,Rabies,Dog,1,1,157,0,0,0,0,-6.83333,32.40000,
+20,Rukwa,Mpanda,Usevia,30-Mar-2017,Rabies,Dog,4,4,548,0,0,0,0,-7.10000,31.23333,
+21,Mara,Musoma,Bukiroba,23-May-2017,Rabies,Dog,4,1,185,4,0,0,0,-1.53333,33.86667,
+22,Arusha,Arumeru,Sang'isi,1-Jul-2017,Rabies,Dog,1,1,56,0,0,0,0,3.61667,36.96667,
+23,Rukwa,Mpanda,Bulenda,5-Jul-2017,Rabies,Dog,3,3,19,0,0,0,0,-5.58333,30.50000,
+24,Tanga,Pangani,Mkwaja,18-Jul-2017,Rabies,Dog,2,2,183,0,0,0,5,-5.78333,38.85000,
+25,Kilimanjaro,Moshi,Himo,17-Aug-2017,Rabies,Dog,1,1,34,0,0,0,10,-3.38333,37.55000,
+26,Rukwa,Mpanda,Kampemba,21-Aug-2017,Rabies,Dog,6,6,99,0,0,0,0,-6.78333,30.53333,
+27,Rukwa,Mpanda,Mwenge,13-Sep-2017,Rabies,Dog,7,3,205,0,0,0,0,-6.36667,31.23333,
+28,Tanga,Pangani,Mivumoni,16-Sep-2017,Rabies,Dog,6,6,121,0,0,0,84,-5.33333,38.58333,
+29,Tanga,Handeni,Kilindi,20-Sep-2017,Rabies,Dog,16,10,200,0,0,0,0,-5.63333,37.60000,
+30,Dodoma,Dodoma,Bahi,26-Oct-2017,Rabies,Dog,2,2,169,0,0,0,0,-5.98333,35.31667,
+31,Mara,Musoma,Bisumwa,28-Oct-2017,Rabies,Dog,4,4,56,0,0,0,20,-1.58333,33.80000,
+32,Geita,Geita,mwatulole,15-Jan-2018,Rabies,Dog,1,1,1,0,1,0,0,-2.89069,32.28316,
+33,Tanga,Kilindi,kwamwande,20-Feb-2018,Rabies,Canine,4,2,33,0,2,0,11,-5.57251,37.28954,
+34,Mara,Bunda,Bunere,10-May-2018,Rabies,Dog,1,1,162,0,0,0,0,-2.02314,33.86181,
+35,Arusha,Arusha,Timbolo Village - Arusha DC,4-Jun-2018,Rabies,Goat,1,0,96,0,1,0,0,-3.29138,36.67547,
+36,Arusha,Arusha,Sambasha Village - Arusha DC,6-Jul-2018,Rabies,Dog,1,1,135,0,1,0,0,-3.36313,36.70945,
+37,Tanga,Muheza,Mikocheni,14-Aug-2018,Rabies,Dog,4,2,123,0,2,0,105,-5.18366,38.79271,
+38,Arusha,Arusha,Olasiti Ward - Arusha City Council,14-Aug-2018,Rabies,Canine,1,0,1104,0,0,0,0,-3.31943,36.63661,
+39,Tanga,Muheza,mwera,16-Aug-2018,Rabies,Dog,3,0,69,0,4,0,50,-5.18507,38.78350,
+40,Dodoma,Dodoma Urban,Mkekena,26-Aug-2018,Rabies,"Cattle,Dog",2,0,58,0,1,0,0,-6.13146,35.73680,
+41,Kilimanjaro,Same,Majevu,13-Sep-2018,Rabies,Dog,1,0,314,0,1,0,0,-4.05848,37.75261,
+42,Tanga,Kilindi,"Songe,kilindi Tanga",18-Sep-2018,Rabies,Dog,1,0,53,0,0,0,0,-5.57304,37.28960,
+43,Dodoma,Kondoa,Masange,24-Sep-2018,Rabies,Dog,1,0,80,0,1,0,0,-4.90234,35.80144,
+44,Singida,Iramba,Kyengege,5-Oct-2018,Rabies,Canine,1,1,1,0,0,0,0,-4.27981,34.41057,
+45,Dar-es-salaam,Temeke,kimbiji(Golan),13-Nov-2018,Rabies,Canine,1,1,20,0,1,0,0,-7.00054,39.52284,
+46,Mwanza,Ilemela,Ilemela mahakama,2-Jan-2019,Rabies,Canine,1,0,250,,1,0,0,-2.45332,32.91123,
+47,Simiyu,Maswa,Nyalikungu,21-Jan-2019,Rabies,Dog,1,1,82,,1,0,17,-3.19492,33.78651,
+48,Rukwa,Kalambo,Zyangoma village at Mwimbi ward,26-Jan-2019,Rabies,Cattle,2,2,250,,2,0,0,-8.30573,31.52719,
+49,Kigoma,Kasulu Township Authority,Mwilamvya,19-Feb-2019,Rabies,Dog,1,0,1,,1,0,0,-4.55933,30.11134,
+50,Morogoro,Kilombero,Malinyi,1-Apr-2019,Rabies,Dog,7,7,7000,,0,0,0,-8.25235,36.18677,
+51,Tabora,Nzega,ipilili,7-Apr-2019,Rabies,Dog,1,1,0,,0,0,0,-4.21428,33.18038,
+52,Tabora,Nzega,Kitongo B,7-Apr-2019,Rabies,Dog,1,1,0,,0,0,0,-4.21428,33.18038,
+53,Tanga,Kilindi,vilindwa village kilindi Tanga,23-Apr-2019,Rabies,Dog,1,1,7,,1,0,0,-5.57270,37.28977,
+54,Mbeya,Chunya,sinjilili,20-Jul-2019,Rabies,Dog,1,0,320,,1,0,241,-8.53660,33.42969,
+55,Mbeya,Chunya,sinjilili,20-Jul-2019,Rabies,Dog,1,0,320,,1,0,241,-8.53660,33.42969,
+56,Kilimanjaro,Siha,kishisha,24-Jul-2019,Rabies,Canine,1,1,2,,1,0,2,-3.15800,37.12472,
+57,Ruvuma,Tunduru,Nangunguru,12-Aug-2019,Rabies,Dog,3,0,125,,0,0,0,-11.04830,37.34227,
+58,Kigoma,Kibondo,Busunzu,16-Aug-2019,Rabies,Cattle,1,0,5,,0,0,0,-3.58182,30.71253,
+59,Simiyu,Busega,Bulima,30-Aug-2019,Rabies,Dog,1,0,2,,0,0,0,-2.37226,33.57818,
+60,Manyara,Hanang,Gehandu Hanang Mnyara,23-Sep-2019,Rabies,Canine,1,1,45,,0,0,0,-4.52111,35.38243,
+61,Ruvuma,Tunduru,Jiungeni village_ Mtina ward,30-Sep-2019,Rabies,"Dog,Donkey,Cattle",4,3,134,,4,0,0,-11.05221,37.34073,
+62,Ruvuma,Tunduru,"Nakayaya CDC",16-Nov-2019,Rabies,Dog,2,2,5,,0,0,0,-11.03097,37.32638,
+63,Njombe,Makete,makete(Misiwa Village),14-Dec-2019,Rabies,Dog,1,0,1,,1,0,0,-9.25783,34.09330,
+64,Mwanza,Sengerema,Nyatukala,10-Dec-2020,Rabies,Dogs,1,0,1,0,0,0,0,-2.660545,32.627625,Suspected
+65,Mtwara,Nanyumbu,MKUULA,26-Nov-2020,Rabies,Goats,1,1,6,0,0,0,0,-11.1484917,38.508955,Suspected
+66,Morogoro,Morogoro,Mvuha Ward,18-Sep-2020,Rabies,Canine,1,1,86,0,0,0,0,-7.202366,37.863502,Suspected
+67,Tabora,Urambo,Ukondamoyo ward/n'holongo village,21-May-2020,Rabies,Dogs,1,0,0,0,0,0,0,-5.109389,31.993196,Suspected
+68,Mbeya,Mbozi,Nambinzo Mbozi,13-May-2020,Rabies,Canine,1,0,2,0,0,0,0,-9.1077335,32.9330254,Suspected
+69,Pwani,Mkuranga,Mkwaliakitumbo,7-May-2020,Rabies,"Canine,Goats",4,1,104,1,1,,,-7.1291124,39.2096758,Confirmed
+70,Ruvuma,Tunduru,Namakambale,29-Apr-2020,Rabies,Dogs,6,1,53,0,0,0,12,-11.0523589,37.3407276,Suspected
+71,Tabora,Urambo,izenga batogilwe,16-Apr-2020,Rabies,Dogs,2,0,0,2,2,0,0,-5.0805952,32.0854822,Suspected
+72,Tabora,Urambo,osterbay,12-Apr-2020,Rabies,Dogs,2,1,0,0,0,0,0,-5.0922377,32.0679425,Suspected
+73,Kigoma,Kasulu Township Authority,Nyakitonto Kasulu DC,3-Apr-2020,Rabies,Dogs,1,1,,1,1,0,0,-4.504087,30.227292,Suspected
+74,Tanga,Pangani,Bushiri,17-Mar-2020,Rabies,Canine,3,0,110,3,3,0,67,-5.3641533,38.9547883,Suspected
+75,Tabora,Nzega,utemini,16-Mar-2020,Rabies,Canine,0,1,0,0,0,0,0,-4.2144109,33.183465,Suspected
+76,Tabora,Nzega,majengo,5-Mar-2020,Rabies,Dogs,1,1,0,0,0,0,0,-4.2201162,33.1802484,Suspected
+77,Ruvuma,Tunduru,Matemanga,13-Feb-2020,Rabies,Dogs,2,2,250,0,0,0,0,-11.0246467,37.3259833,Suspected
+78,Tabora,Urambo,ugalla,31-Jan-2020,Rabies,Canine,4,0,9904,1,1,0,0,-5.0682878,32.046218,Suspected
+79,Kagera,Ngara,Ngara Mjini,20-Jan-2020,Rabies,Dogs,1,0,0,0,0,0,0,-2.511948,30.6536035,Suspected
+80,Dar-es-salaam,Temeke,Buza,18-Jan-2020,Rabies,Dogs,1,0,2,1,1,0,0,-6.8938406,39.2362798,Suspected

@@ -84,9 +84,9 @@ class ProcessUploadedHeader implements ShouldQueue
                 'organisation_unit_name' => $value->organisation_unit_name,
                 'organisation_unit_code' => $value->organisation_unit_code,
                 'disease' => $value->disease,
-                'one_month_to_below_one_year' => $value->one_month_to_below_one_year,
-                'one_to_below_five_years' => $value->one_to_below_five_years,
+                'one_month_to_below_five_year' => $value->one_month_to_below_five_year,
                 'five_to_below_sixty_years' => $value->five_to_below_sixty_years,
+                'observation_date' => $value->observation_date,
             ];
 
             //$uploadHeader = $this->uploadHeaderRepository->find($headerId);

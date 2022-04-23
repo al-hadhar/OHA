@@ -7,7 +7,7 @@ use Eloquent as Model;
 /**
  * Class UploadHeader
  * @package App
- * @version January 9, 2022, 6:43 pm IST
+ * @version April 23, 2022, 12:23 pm IST
  *
  * @property integer $type
  * @property string $file_name
@@ -62,7 +62,9 @@ class UploadHeader extends Model
         'file_path' => 'nullable|string|max:200',
         'total_success' => 'nullable|integer',
         'total_failed' => 'nullable|integer',
-        'status' => 'nullable|integer'
+        'status' => 'nullable|integer',
+        'created_at' => 'required',
+        'updated_at' => 'nullable'
     ];
 
     

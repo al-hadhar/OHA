@@ -13,6 +13,7 @@
         "ext-zip": "*",
         "barryvdh/laravel-dompdf": "^0.8.5",
         "fideloper/proxy": "^4.0",
+        "fruitcake/laravel-cors": "^3.0",
         "infyomlabs/adminlte-templates": "6.0.x-dev",
         "infyomlabs/laravel-generator": "6.0.x-dev",
         "intervention/image": "^2.5",

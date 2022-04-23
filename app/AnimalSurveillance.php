@@ -7,8 +7,9 @@ use Eloquent as Model;
 /**
  * Class AnimalSurveillance
  * @package App
- * @version January 12, 2022, 2:13 am IST
+ * @version April 23, 2022, 8:41 am IST
  *
+ * @property integer $upload_header_id
  * @property string $region
  * @property string $district
  * @property string $village
@@ -22,15 +23,17 @@ use Eloquent as Model;
  * @property string $destroyed
  * @property string $slaughtered
  * @property string $vaccinated
- * @property integer $lat
- * @property integer $long
+ * @property number $lat
+ * @property number $long
  * @property integer $status
+ * @property integer $valid_status
+ * @property string $reject_reason
  */
 class AnimalSurveillance extends Model
 {
 
     public $table = 'tbl_animal_surveillance_staging';
-
+    
     const CREATED_AT = 'created_at';
     const UPDATED_AT = 'updated_at';
 
@@ -55,7 +58,8 @@ class AnimalSurveillance extends Model
         'lat',
         'long',
         'status',
-        'valid_status'
+        'valid_status',
+        'reject_reason'
     ];
 
     /**
@@ -65,7 +69,7 @@ class AnimalSurveillance extends Model
      */
     protected $casts = [
         'id' => 'integer',
-        'upload_header_id',
+        'upload_header_id' => 'integer',
         'region' => 'string',
         'district' => 'string',
         'village' => 'string',
@@ -79,10 +83,11 @@ class AnimalSurveillance extends Model
         'destroyed' => 'string',
         'slaughtered' => 'string',
         'vaccinated' => 'string',
-        'lat' => 'integer',
-        'long' => 'integer',
+        'lat' => 'float',
+        'long' => 'float',
         'status' => 'integer',
-        'valid_status' => 'integer'
+        'valid_status' => 'integer',
+        'reject_reason' => 'string'
     ];
 
     /**
@@ -91,6 +96,7 @@ class AnimalSurveillance extends Model
      * @var array
      */
     public static $rules = [
+        'upload_header_id' => 'nullable|integer',
         'region' => 'nullable|string|max:100',
         'district' => 'nullable|string|max:100',
         'village' => 'nullable|string|max:100',
@@ -104,11 +110,14 @@ class AnimalSurveillance extends Model
         'destroyed' => 'nullable|string|max:10',
         'slaughtered' => 'nullable|string|max:10',
         'vaccinated' => 'nullable|string|max:10',
-        'lat' => 'nullable|integer',
-        'long' => 'nullable|integer',
+        'lat' => 'nullable|numeric',
+        'long' => 'nullable|numeric',
         'status' => 'nullable|integer',
-        'valid_status' => 'nullable|integer'
+        'valid_status' => 'nullable|integer',
+        'reject_reason' => 'nullable|string',
+        'created_at' => 'nullable',
+        'updated_at' => 'nullable'
     ];
 
-
+    
 }

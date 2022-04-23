@@ -60,19 +60,7 @@
         "inView": true
     },
     {
-        "name": "one_month_to_below_one_year",
-        "dbType": "integer,false",
-        "htmlType": null,
-        "validations": "nullable|integer|nullable|integer",
-        "searchable": true,
-        "fillable": true,
-        "primary": false,
-        "inForm": true,
-        "inIndex": true,
-        "inView": true
-    },
-    {
-        "name": "one_to_below_five_years",
+        "name": "one_month_to_below_five_year",
         "dbType": "integer,false",
         "htmlType": null,
         "validations": "nullable|integer|nullable|integer",
@@ -88,6 +76,18 @@
         "dbType": "integer,false",
         "htmlType": null,
         "validations": "nullable|integer|nullable|integer",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "observation_date",
+        "dbType": "string,50:nullable",
+        "htmlType": "text",
+        "validations": "nullable|string|max:50|nullable|string|max:50",
         "searchable": true,
         "fillable": true,
         "primary": false,

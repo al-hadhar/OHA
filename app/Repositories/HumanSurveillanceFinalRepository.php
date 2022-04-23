@@ -8,7 +8,7 @@ use App\Repositories\BaseRepository;
 /**
  * Class HumanSurveillanceFinalRepository
  * @package App\Repositories
- * @version January 15, 2022, 2:36 am IST
+ * @version February 20, 2022, 10:32 pm IST
 */
 
 class HumanSurveillanceFinalRepository extends BaseRepository
@@ -22,9 +22,9 @@ class HumanSurveillanceFinalRepository extends BaseRepository
         'organisation_unit_name',
         'organisation_unit_code',
         'disease',
-        'one_month_to_below_one_year',
-        'one_to_below_five_years',
-        'five_to_below_sixty_years'
+        'one_month_to_below_five_year',
+        'five_to_below_sixty_years',
+        'observation_date'
     ];
 
     /**

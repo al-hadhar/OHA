@@ -65,8 +65,15 @@ Route::resource('humanSurveillanceFinals', 'HumanSurveillanceFinalController');
 
 Route::resource('humanSurveillanceFinals', 'HumanSurveillanceFinalController');
 
-Route::resource('humanSurveillances', 'HumanSurveillanceController');
 
-Route::resource('humanSurveillances', 'HumanSurveillanceController');
 
 Route::resource('humanSurveillanceFinals', 'HumanSurveillanceFinalController');
+
+
+Route::resource('humanSurveillanceFinals', 'HumanSurveillanceFinalController');
+
+Route::resource('humanSurveillanceFinals', 'HumanSurveillanceFinalController');
+
+/*Route::resource('humanSurveillances', 'HumanSurveillanceController');
+
+Route::resource('animalSurveillances', 'AnimalSurveillanceController');*/

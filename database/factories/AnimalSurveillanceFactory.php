@@ -8,6 +8,7 @@ use Faker\Generator as Faker;
 $factory->define(AnimalSurveillance::class, function (Faker $faker) {
 
     return [
+        'upload_header_id' => $faker->randomDigitNotNull,
         'region' => $faker->word,
         'district' => $faker->word,
         'village' => $faker->word,
@@ -23,6 +24,10 @@ $factory->define(AnimalSurveillance::class, function (Faker $faker) {
         'vaccinated' => $faker->word,
         'lat' => $faker->randomDigitNotNull,
         'long' => $faker->randomDigitNotNull,
-        'status' => $faker->randomDigitNotNull
+        'status' => $faker->randomDigitNotNull,
+        'valid_status' => $faker->randomDigitNotNull,
+        'reject_reason' => $faker->text,
+        'created_at' => $faker->date('Y-m-d H:i:s'),
+        'updated_at' => $faker->date('Y-m-d H:i:s')
     ];
 });

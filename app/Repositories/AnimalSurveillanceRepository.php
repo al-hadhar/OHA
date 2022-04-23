@@ -8,7 +8,7 @@ use App\Repositories\BaseRepository;
 /**
  * Class AnimalSurveillanceRepository
  * @package App\Repositories
- * @version January 12, 2022, 2:13 am IST
+ * @version April 23, 2022, 8:41 am IST
 */
 
 class AnimalSurveillanceRepository extends BaseRepository
@@ -17,6 +17,7 @@ class AnimalSurveillanceRepository extends BaseRepository
      * @var array
      */
     protected $fieldSearchable = [
+        'upload_header_id',
         'region',
         'district',
         'village',
@@ -32,7 +33,9 @@ class AnimalSurveillanceRepository extends BaseRepository
         'vaccinated',
         'lat',
         'long',
-        'status'
+        'status',
+        'valid_status',
+        'reject_reason'
     ];
 
     /**

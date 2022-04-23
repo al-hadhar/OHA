@@ -1,3 +1,10 @@
+<!-- Upload Header Id Field -->
+<div class="form-group">
+    {!! Form::label('upload_header_id', 'Upload Header Id:') !!}
+    <p>{{ $animalSurveillance->upload_header_id }}</p>
+</div>
+
+
 <!-- Region Field -->
 <div class="form-group">
     {!! Form::label('region', 'Region:') !!}
@@ -107,6 +114,20 @@
 <div class="form-group">
     {!! Form::label('status', 'Status:') !!}
     <p>{{ $animalSurveillance->status }}</p>
+</div>
+
+
+<!-- Valid Status Field -->
+<div class="form-group">
+    {!! Form::label('valid_status', 'Valid Status:') !!}
+    <p>{{ $animalSurveillance->valid_status }}</p>
+</div>
+
+
+<!-- Reject Reason Field -->
+<div class="form-group">
+    {!! Form::label('reject_reason', 'Reject Reason:') !!}
+    <p>{{ $animalSurveillance->reject_reason }}</p>
 </div>
 
 

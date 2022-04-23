@@ -33,17 +33,10 @@
 </div>
 
 
-<!-- One Month To Below One Year Field -->
+<!-- One Month To Below Five Year Field -->
 <div class="form-group">
-    {!! Form::label('one_month_to_below_one_year', 'One Month To Below One Year:') !!}
-    <p>{{ $humanSurveillanceFinal->one_month_to_below_one_year }}</p>
-</div>
-
-
-<!-- One To Below Five Years Field -->
-<div class="form-group">
-    {!! Form::label('one_to_below_five_years', 'One To Below Five Years:') !!}
-    <p>{{ $humanSurveillanceFinal->one_to_below_five_years }}</p>
+    {!! Form::label('one_month_to_below_five_year', 'One Month To Below Five Year:') !!}
+    <p>{{ $humanSurveillanceFinal->one_month_to_below_five_year }}</p>
 </div>
 
 
@@ -51,6 +44,13 @@
 <div class="form-group">
     {!! Form::label('five_to_below_sixty_years', 'Five To Below Sixty Years:') !!}
     <p>{{ $humanSurveillanceFinal->five_to_below_sixty_years }}</p>
+</div>
+
+
+<!-- Observation Date Field -->
+<div class="form-group">
+    {!! Form::label('observation_date', 'Observation Date:') !!}
+    <p>{{ $humanSurveillanceFinal->observation_date }}</p>
 </div>
 
 

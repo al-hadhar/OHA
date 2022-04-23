@@ -60,7 +60,7 @@
         "inView": true
     },
     {
-        "name": "one_month_to_below_one_year",
+        "name": "zero_year",
         "dbType": "string,10:nullable",
         "htmlType": "text",
         "validations": "nullable|string|max:10|nullable|string|max:10",
@@ -88,6 +88,18 @@
         "dbType": "string,10:nullable",
         "htmlType": "text",
         "validations": "nullable|string|max:10|nullable|string|max:10",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "observation_date",
+        "dbType": "string,50:nullable",
+        "htmlType": "text",
+        "validations": "nullable|string|max:50|nullable|string|max:50",
         "searchable": true,
         "fillable": true,
         "primary": false,

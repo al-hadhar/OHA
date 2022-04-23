@@ -12,6 +12,18 @@
         "inView": false
     },
     {
+        "name": "upload_header_id",
+        "dbType": "integer,false",
+        "htmlType": null,
+        "validations": "nullable|integer|nullable|integer",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
         "name": "region",
         "dbType": "string,100:nullable",
         "htmlType": "text",
@@ -169,9 +181,9 @@
     },
     {
         "name": "lat",
-        "dbType": "integer,false",
+        "dbType": "float,11,0",
         "htmlType": null,
-        "validations": "nullable|integer|nullable|integer",
+        "validations": "nullable|numeric|nullable|numeric",
         "searchable": true,
         "fillable": true,
         "primary": false,
@@ -181,9 +193,9 @@
     },
     {
         "name": "long",
-        "dbType": "integer,false",
+        "dbType": "float,11,0",
         "htmlType": null,
-        "validations": "nullable|integer|nullable|integer",
+        "validations": "nullable|numeric|nullable|numeric",
         "searchable": true,
         "fillable": true,
         "primary": false,
@@ -202,5 +214,53 @@
         "inForm": true,
         "inIndex": true,
         "inView": true
+    },
+    {
+        "name": "valid_status",
+        "dbType": "integer,false",
+        "htmlType": null,
+        "validations": "nullable|integer|nullable|integer",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "reject_reason",
+        "dbType": "text:nullable",
+        "htmlType": "textarea",
+        "validations": "nullable|string|nullable|string",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "created_at",
+        "dbType": "datetime:nullable",
+        "htmlType": "date",
+        "validations": "nullable|nullable",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "updated_at",
+        "dbType": "datetime:nullable",
+        "htmlType": "date",
+        "validations": "nullable|nullable",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
     }
 ]

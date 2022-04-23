@@ -65,6 +65,7 @@ class AnimalSurveillanceDataTable extends DataTable
     protected function getColumns()
     {
         return [
+            'upload_header_id',
             'region',
             'district',
             'village',
@@ -80,7 +81,9 @@ class AnimalSurveillanceDataTable extends DataTable
             'vaccinated',
             'lat',
             'long',
-            'status'
+            'status',
+            'valid_status',
+            'reject_reason'
         ];
     }
 
